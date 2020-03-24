@@ -1,69 +1,83 @@
-<HTML>
-<!--This file created 13:33  07/03/2020 by Claris Home Page version 3.0 30 Day Trial-->
-<HEAD>
-   <META NAME=GENERATOR CONTENT="Claris Home Page 3.0 30 Day Trial">
-   <X-CLARIS-WINDOW TOP=0 BOTTOM=703 LEFT=0 RIGHT=1596>
-   <X-CLARIS-TAGVIEW MODE=minimal>
-</HEAD>
-<BODY style="background-color:black;">
-<P>&nbsp;</P>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<H1><FONT COLOR="#FFFFFF">PRSC |
-</FONT><FONT SIZE="-2" COLOR="#FFFFFF">Project Reality Server
-Competitivo</FONT></H1>
-
-<P><FONT COLOR="#FFFFFF"><SCRIPT LANGUAGE="" type="text/javascript">function startTime()
-{
-var today=new Date();
-var h=today.getHours();
-var m=today.getMinutes();
-var s=today.getSeconds();
-// adicione um zero na frente de números<10
-m=checkTime(m);
-s=checkTime(s);
-document.getElementById('txt').innerHTML=h+":"+m+":"+s;
-t=setTimeout('startTime()',500);
+<head>
+	<meta charset="utf-8">
+	<title>PRSC.com </title>
+	<style>
+		body{
+		background-color: 	#282828;
+		color: white
+		}
+	</Style>
+	<link rel="stylesheet" type="text/css" href="_css/formatacao.css">
+</head>
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+  document.getElementById('prt').innerHTML =
+  h+3 + ":" + m + ":" + s;
 }
-function checkTime(i)
-{
-if (i<10)
-{
-i="0" + i;
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
 }
-return i;
-}</SCRIPT> </HEAD><FORM ACTION="action_page.php" METHOD=POST>
-   <P><div class="imgcontainer"> <IMG SRC="img_avatar2.png" ALT="Avatar" X-CLARIS-USEIMAGEWIDTH X-CLARIS-USEIMAGEHEIGHT ALIGN=bottom class=avatar>
-</div> <div class="container"> <label for="uname"><B>Username</B></label>
-   <INPUT TYPE=text NAME=uname VALUE="" SIZE=30 placeholder="Enter Username" required>
-<label for="psw"><B>Password</B></label>
-   <INPUT TYPE=password NAME=psw VALUE="" SIZE=30 placeholder="Enter Password" required>
-<button type="submit">Login</button> <label><INPUT TYPE=checkbox NAME=remember VALUE=value CHECKED> Remember
-   me </label> </div> <div class="container" style="background-color:#f1f1f1">
-<button type="button" class="cancelbtn">Cancel</button> <span class="psw">Forgot
-   <A HREF="#">password?</A></span> </div>
-</FORM></FONT></P>
+</script>
+<body onload="startTime()">
+<div id="interface">
+	<hgroup>
+		<p><font size="12"><h1>PRSC|</font><font size="5">Project Reality Server Competitivo</h1></p>
+	</font></hgroup>
+	<figure class= logo1>
+		<img src="_imagens/PRSC-logo1.jpg" width = "175"/>
+	</figure> 
+	<p><h3>Horario PR-BR: <div id=txt></div></h3></p>
+	<p><h4>Horario PR: <div id=prt></div> </h4></p>
+<nav>
+	<h1>Menu</h1>
+	<ul>
+		<li><a href="index.html">Noticias</a></li>
+		<li><a href="/forum">Forum</a></li>
+			<ul>
+			<li><a href="forum/regras.html">regras</a></li>
+			<li><a href="forum/servers.html">servers</a></li>
+			<li><a href="forum/clans.html">Clãns</a></li>
+			<li><a href="forum/bans.html">Bans</li>
+		</ul>
+		<li><a href="https://calendar.google.com/calendar/embed?src=q735c999dj9f4po4ncf9au7940%40group.calendar.google.com&ctz=America%2FSao_Paulo" target="_blank">Calendario</a></li>
+		<li>eventos</li>
+		<ul>
+			<li><a href="/forum/regraseventos.html">regras</a></li>
+			<li><a href="/eventos/inscricao.html">inscrição</a></li>
+			<li><a href="/eventos/times.html">time</a></li>
+		</ul>
+		<li><a href="/battlerecorder" target="_blank">demos</a></li>
+		<li>Perfil</li>
+		<ul>
+			<li>bio</li>
+			<li><a href="mensagens/pm.html">Mensagens</a></li>
+			<li><a href="mensagens/pm.html">denuncias</a></li>
+		</ul>
+		<li><a href="equipe_adm.html">Trabalhe conosco</a></li>
+		<li>Project Reality</li>
+			<ul>
+			<li><a href="https://www.realitymod.com/forum/" target="_blank">Realitymod forum</a></li>
+			<li><a href="https://www.realitymod.com/prspy" target="_blank">prspy</a></li>
+			<li><a href="https://www.realitymod.com/mapgallery/#!/" target="_blank">Mapas</a></li>
+			<li><a href="https://www.realitymod.com/downloads" target="_blank">Download</a></li>
+	</ul>
+</nav>
 
-<P><FONT COLOR="#FFFFFF"><div id="txt"></div><button type="button">forum</button><button type="button">demos</button></FONT></P>
 
-<P>&nbsp;</P>
 
-<UL>
-   <LI><FONT SIZE="-2" COLOR="#FFFFFF">noticias</FONT></LI>
-
-   <LI><FONT SIZE="-2" COLOR="#FFFFFF">server</FONT></LI>
-
-   <LI><FONT SIZE="-2" COLOR="#FFFFFF">forum</FONT></LI>
-
-   <LI><FONT SIZE="-2" COLOR="#FFFFFF">clan</FONT></LI>
-
-   <LI><FONT SIZE="-2" COLOR="#FFFFFF">perfil</FONT></LI>
-
-   <LI><FONT SIZE="-2" COLOR="#FFFFFF">amigos</FONT><FONT COLOR="#FFFFFF">
-   </FONT></LI>
-
-   <LI><FONT SIZE="-2" COLOR="#FFFFFF">eventos</FONT></LI>
-
-   <LI><FONT SIZE="-2" COLOR="#FFFFFF">inscri&ccedil;&otilde;es</FONT></LI>
-</UL>
-
-<PRE><CENTER><FONT COLOR="#FFFFFF">NOTICIAS&nbsp;DO&nbsp;SERVER&nbsp;
+</div>
+</body>
+</html> 
