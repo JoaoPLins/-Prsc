@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>PRSC.com </title>
+	<style>
+		<style>
+		ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+		}
+
+		li {
+		float: left;
+		}
+
+		li a, .dropbtn {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		}
+
+		li a:hover, .dropdown:hover .dropbtn {
+		background-color: red;
+		}
+
+		li.dropdown {
+		display: inline-block;
+		}
+
+		.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		}
+
+		.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+		}
+		
+		.dropdown-content a:hover {background-color: #f1f1f1;}
+		
+		.dropdown:hover .dropdown-content {
+		display: block;
+		}
+		
+		body{
+		background-color: 	#282828;
+		color: white
+		}
+		
+		
+		.disc{ 
+		text-align: right;
+		}
+	</Style>
+	<link rel="stylesheet" type="text/css" href="_css/formatacao.css">
+</head>
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+  document.getElementById('prt').innerHTML =
+  h+3 + ":" + m + ":" + s;
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+<body onload="startTime()">
+<div id="interface">
+	<hgroup>
+		<p><font size="12"><h1>PRSC|</font><font size="5">Project Reality Server Competitivo</h1></p>
+	</font></hgroup>
+	<figure class= logo1>
+		<img src="_imagens/PRSC-logo1.jpg" width = "175"/>
+	</figure> 
+	<iframe src="https://discordapp.com/widget?id=395746047747686412&theme=dark" class=disc width="350" height="1000" allowtransparency="true" frameborder="0"></iframe>
+	<p><h3>Horario PR-BR: <div id=txt></div></h3></p>
+	<p><h4>Horario PR: <div id=prt></div> </h4></p>
+<nav>
+	<h1>Menu</h1>
+	<ul>
+		<li><a href="index.html">Noticias</a></li>
+		<li><a href="/forum">Forum</a></li>
+			<ul>
+			<li><a href="forum/regras.html">regras</a></li>
+			<li><a href="forum/servers.html">servers</a></li>
+			<li><a href="forum/clans.html">Clãns</a></li>
+			<li><a href="forum/bans.html">Bans</li>
+		</ul>
+		<li><a href="https://calendar.google.com/calendar/embed?src=q735c999dj9f4po4ncf9au7940%40group.calendar.google.com&ctz=America%2FSao_Paulo" target="_blank">Calendario</a></li>
+		<li>eventos</li>
+		<ul>
+			<li><a href="/forum/regraseventos.html">regras</a></li>
+			<li><a href="/eventos/inscricao.html">inscrição</a></li>
+			<li><a href="/eventos/times.html">time</a></li>
+		</ul>
+		<li><a href="/battlerecorder" target="_blank">demos</a></li>
+		<li>Perfil</li>
+		<ul>
+			<li>bio</li>
+			<li><a href="mensagens/pm.html">Mensagens</a></li>
+			<li><a href="mensagens/pm.html">denuncias</a></li>
+		</ul>
+		<li><a href="equipe_adm.html">Trabalhe conosco</a></li>
+		<li>Project Reality</li>
+			<ul>
+			<li><a href="https://www.realitymod.com/forum/" target="_blank">Realitymod forum</a></li>
+			<li><a href="https://www.realitymod.com/prspy" target="_blank">prspy</a></li>
+			<li><a href="https://www.realitymod.com/mapgallery/#!/" target="_blank">Mapas</a></li>
+			<li><a href="https://www.realitymod.com/downloads" target="_blank">Download</a></li>
+	</ul>
+</nav>
+
+
+
+</div>
+</body>
+</html> 

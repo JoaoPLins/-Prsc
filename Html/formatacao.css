@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+nav#menu ul{
+	list-style-type: none;
+}
+
+nav#menu li{
+	display: inline block;
+}
